@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyloft Studio — Web Design & Digital Architecture for Electrical Businesses</title>
+    <meta name="description" content="Award-winning web design, UI/UX, app development, and SEO portfolio engineered exclusively for electrical contractors, electricians, and solar installation companies." />
+    <meta property="og:title" content="VoltForge — Web Design & Digital Architecture for Electrical Businesses" />
+    <meta property="og:description" content="High-converting digital platforms, custom apps, and SEO dominance for electrical contractors, electricians, and solar companies." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display / Serif Italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Pure CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ======================================================================
+         SITE HEADER / NAVIGATION (Exact match to uploaded crop)
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="nav-container">
+        <!-- Logo NW -->
+        <a href="#" class="logo-nw" aria-label="NW Home">
+          <span>Skyloft Studio</span>
+        </a>
+
+        <!-- Centered Navigation -->
+        <nav class="main-navigation" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#works" class="nav-item">Works</a></li>
+            <li class="nav-dropdown-item">
+              <a href="#services" class="nav-item has-chevron">
+                <span>Services</span>
+                <svg class="nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                  <path d="M1 1.25L5 4.75L9 1.25" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <div class="nav-dropdown-menu">
+                <a href="#services">Web Design & Architecture</a>
+                <a href="#services">UI/UX Design & Estimators</a>
+                <a href="#services">App Development for Electrical</a>
+                <a href="#services">SEO & Local Search Dominance</a>
+              </div>
+            </li>
+            <li><a href="#blog" class="nav-item">Blog</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right actions: Search, Sun/Theme, Kontakt pill button -->
+        <div class="nav-actions">
+          
+          <a href="#contact" class="btn-kontakt-pill">
+            <span>Contact</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <button class="menu-toggle" aria-label="Toggle mobile menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;">
+        <span class="logo-nw">NW</span>
+        <button id="closeDrawerBtn" style="background:transparent; border:none; color:#fff; font-size:1.5rem; cursor:pointer;">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#works">Arbeiten (Works)</a></li>
+        <li><a href="#services">Leistungen (Services)</a></li>
+        <li><a href="#sectors">Electrical Sectors</a></li>
+        <li><a href="#about">Über mich (About)</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog Stories</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <div style="font-size:0.8rem; color:#888; margin-top:auto;">
+        Nattawan Worachat · VoltForge Studio<br>
+        © 2026 All Rights Reserved
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         1. HERO SECTION (Identical match to uploaded reference image)
+         Features:
+         - Motion blurred runner with intense fiery neon-orange light on the right
+         - Dark motion speed trails on the left
+         - Giant typography: MOTION — DESIGN IN MOTION (electric blue for IN MOTION)
+         - Bottom left: Nattawan Worachat / Designer · Art Director · Runner · Linz
+         - Bottom right: Projekt anfragen & Arbeiten ansehen
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Motion background runner visual layer -->
+      <div class="hero-bg-media" aria-hidden="true">
+        <img class="hero-bg-photo" src="images/skyloftstudio_hero.png" alt="Runner in dynamic motion blur" />
+        <div class="hero-speed-lines-overlay"></div>
+        <div class="hero-fire-glow-overlay"></div>
+        <div class="hero-dark-vignette-overlay"></div>
+      </div>
+
+      <!-- Giant Center Motion Typography -->
+      <div class="hero-center-content">
+        <h1 class="hero-motion-typography">
+          <span class="text-white-segment">WEB DESIGN FOR</span><span class="text-electric-blue-segment">ELECTRIFIED BUSINESSES</span>
+        </h1>
+      </div>
+
+      <!-- Hero Bottom Bar: Author info left, Action buttons right -->
+      <div class="hero-bottom-container">
+        <div class="hero-author-block">
+          <div class="author-name-headline">Web Build</div>
+          <div class="author-role-subline">High-converting websites for electrical & electronics companies.</div>
+        </div>
+
+        <div class="hero-actions-block">
+          <a href="#services" class="btn-hero-inquiry">
+            <span>Services</span>
+          </a>
+          <a href="#works" class="btn-hero-works">
+            <span>Works</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT SECTION (Editorial Manifesto, Bio & 3 Giant Statistics)
+         ====================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="kicker">About Studio</span>
+          </div>
+
+          <div class="about-main">
+            <h2 class="about-manifesto">
+              We engineer high-voltage digital platforms for electrical businesses. We have experience in transforming electrical contractors, solar pioneers, and master electricians into market leaders — <span class="serif-italic">from the very first spark to full market dominance.</span>
+            </h2>
+
+            <div class="about-body-wrap">
+              <div class="about-bio-text">
+                <p>
+                  Most electrical contractors lose lucrative commercial tenders and high-ticket installations before ever getting on the phone. Their websites look stuck in 2008, fail mobile users, and fail to convey technical authority.
+                </p>
+                <p>
+                  As an Electrical Electronics Engineer myself and a Web Developer, I aim to mix my experience in the two fields to give the Electrical Business not only a face lift
+                  but also to point them in the right direction of attracting more market.
+                </p>
+              </div>
+
+              <div class="about-bio-text">
+                <img class="about-bio-img" src="images/Chinedu.jpg" alt="">
+                <span>Chinedu Osondu</span>
+                <p class="bio-title">Web Designer/Developer · <br>Electrical/Electronics Engineer </p>
+              </div>
+            </div>
+
+            <!-- 3 Massive Key Statistics matching screenshot (15+ / 120+ / 9.500+) -->
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years Specializing in Web Architecture</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Designs Launched</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">98%+</div>
+                <div class="stat-label">Customer Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ELECTRICAL SERVICES LIST (Continuous Right-to-Left Sliding Marquee)
+         With images of different types of electrical businesses we attend to:
+         electricians, electrical contractors, solar installation companies, EV, etc.
+         ====================================================================== -->
+    <section class="sectors-slider-section" id="sectors">
+      <div class="container">
+        <div class="sectors-header-row">
+          <div>
+            <span class="kicker">Industries Attended</span>
+            <h2 class="section-headline" style="margin-bottom:0;">
+              Electrical Businesses We <span class="serif-italic">Power</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infinite Slider Track (Right to Left) -->
+      <div class="marquee-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- CARD 1: Master Electricians & Residential -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Master Electricians & Residential Wiring" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 01 Master Electricians</div>
+              <h3 class="sector-title">Residential & Emergency Electricians</h3>
+              <p class="sector-desc">High-speed mobile platforms featuring 1-tap emergency dispatch, breaker panel upgrade calculators, and localized Google Maps ranking funnels.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Commercial Electrical Contractors -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="Commercial Electrical Contractors" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 02 Commercial Contractors</div>
+              <h3 class="sector-title">Commercial & Industrial Electrical Contractors</h3>
+              <p class="sector-desc">Enterprise tender portals, bonding capacity badges, and multi-million dollar RFP lead funnels for industrial facilities, hospitals, and high-rises.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- CARD 3: Solar & Photovoltaic Companies -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="images/solar.jpg" alt="Solar Installation Companies" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 03 Solar & Storage</div>
+              <h3 class="sector-title">Solar & Photovoltaic Installation Companies</h3>
+              <p class="sector-desc">Interactive rooftop solar yield calculators, battery storage payback tools, and frictionless appointment booking systems for commercial and residential solar.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- CARD 5: Smart Home & Automation -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop" alt="Smart Home and Building Automation" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 04 Smart Automation</div>
+              <h3 class="sector-title">KNX, Crestron & Building Automation</h3>
+              <p class="sector-desc">Luxury architectural portals, interactive lighting scene simulators, and custom smart electrical panel specification vaults for architects and high-end clients.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- CARD 6: Substation & High-Voltage -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="images/high-voltage.jpg" alt="Substation & High-Voltage Power Engineering" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 05 High Voltage & Grid</div>
+              <h3 class="sector-title">Substation & High-Voltage Grid Engineers</h3>
+              <p class="sector-desc">Utility-grade engineering showcases, substation maintenance contract portals, and ISO/OSHA safety certification repositories for infrastructure tenders.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- CARD 7: Architectural & Commercial Lighting -->
+          <article class="sector-card">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1507499739999-097706ad8914?q=80&w=800&auto=format&fit=crop" alt="Architectural & Commercial Lighting Contractors" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 06 Commercial Lighting</div>
+              <h3 class="sector-title">Architectural & LED Retrofit Specialists</h3>
+              <p class="sector-desc">Photometric lighting calculation showcases, municipal energy audit lead magnets, and luxury hospitality illumination galleries.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <!-- DUPLICATE SET FOR SEAMLESS 100% INFINITE LOOP -->
+          <article class="sector-card" aria-hidden="true">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 01 Master Electricians</div>
+              <h3 class="sector-title">Residential & Emergency Electricians</h3>
+              <p class="sector-desc">High-speed mobile platforms featuring 1-tap emergency dispatch, breaker panel upgrade calculators, and localized Google Maps ranking funnels.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <article class="sector-card" aria-hidden="true">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 02 Commercial Contractors</div>
+              <h3 class="sector-title">Commercial & Industrial Electrical Contractors</h3>
+              <p class="sector-desc">Enterprise tender portals, bonding capacity badges, and multi-million dollar RFP lead funnels for industrial facilities, hospitals, and high-rises.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <article class="sector-card" aria-hidden="true">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 03 Solar & Storage</div>
+              <h3 class="sector-title">Solar & Photovoltaic Installation Companies</h3>
+              <p class="sector-desc">Interactive rooftop solar yield calculators, battery storage payback tools, and frictionless appointment booking systems for commercial and residential solar.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+
+          <article class="sector-card" aria-hidden="true">
+            <img class="card-bg-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop" alt="" loading="lazy" />
+            <div class="card-gradient-overlay"></div>
+            <div class="card-content">
+              <div class="sector-badge">/ 04 EV & Clean Mobility</div>
+              <h3 class="sector-title">EV Charging Infrastructure Specialists</h3>
+              <p class="sector-desc">Commercial fleet electrification estimators, Level 3 DC fast charger installation workflows, and enterprise utility rebate guidance portals.</p>
+              <div class="sector-link"><span>Inspect Sector Blueprint</span> →</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SERVICES SECTION
+         Exact numbering / 01, / 02, / 03, / 04 with pill CTA button matching screenshot
+         Services: Web Design, UI/UX Design, App Development for Electrical Businesses, SEO
+         ====================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="services-header-row">
+          <h2 class="section-headline" style="margin-bottom:0;">
+            Our <span class="serif-italic">Services</span>
+          </h2>
+          <span class="kicker">Services & Solutions</span>
+        </div>
+
+        <div class="services-list">
+          <!-- SERVICE / 01: Web Design -->
+          <div class="service-row">
+            <div class="service-num">/ 01</div>
+            <div class="service-title-col">
+              <h3>Web Design & Architecture</h3>
+              <div class="service-tags">STRATEGY · CORE WEB VITALS · CONVERSION FUNNELS · CORPORATE DESIGN</div>
+            </div>
+            <div class="service-desc-col">
+              <p>High-speed, responsive websites designed to convert facility managers, architects, and homeowners into committed electrical contracts. 100% bespoke architecture with sub-second page loads.</p>
+            </div>
+            
+          </div>
+
+          <!-- SERVICE / 02: UI/UX Design -->
+          <div class="service-row">
+            <div class="service-num">/ 02</div>
+            <div class="service-title-col">
+              <h3>UI/UX Design</h3>
+              <div class="service-tags">SOLAR CALCULATORS · INTERACTIVE SCHEMATICS · DISPATCH WORKFLOWS</div>
+            </div>
+            <div class="service-desc-col">
+              <p>Specialized digital interfaces, rooftop solar ROI calculators, emergency technician dispatch booking consoles, and interactive electrical spec sheets that eliminate sales friction.</p>
+            </div>
+          </div>
+
+          <!-- SERVICE / 03: App Development for Electrical Businesses -->
+          <div class="service-row">
+            <div class="service-num">/ 03</div>
+            <div class="service-title-col">
+              <h3>App Development for Electrical</h3>
+              <div class="service-tags">FIELD SERVICE APPS · SCHEMATIC VAULTS · REAL-TIME DISPATCH · PWA</div>
+            </div>
+            <div class="service-desc-col">
+              <p>Custom mobile and progressive web applications engineered for electricians in the field, real-time work order dispatching, digital safety checklists, and automated customer status notifications.</p>
+            </div>
+           
+          </div>
+
+          <!-- SERVICE / 04: SEO -->
+          <div class="service-row">
+            <div class="service-num">/ 04</div>
+            <div class="service-title-col">
+              <h3>SEO & Local Search Dominance</h3>
+              <div class="service-tags">LOCAL 3-PACK · GOOGLE MAPS · HIGH INTENT KEYWORDS · SCHEMA MARKUP</div>
+            </div>
+            <div class="service-desc-col">
+              <p>Outrank local competitors and become the undisputed #1 choice when general contractors search for commercial bids or homeowners need urgent 24/7 electrical repairs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. WORKS / PORTFOLIO SECTION ("Die besten Arbeiten")
+         Large cinematic device mockups matching the screenshot aesthetic
+         ====================================================================== -->
+    <section class="works-section" id="works">
+      <div class="container">
+        <div class="works-header-row">
+          <div>
+            <h2 class="section-headline" style="margin-bottom:0;">
+              The Best <span class="serif-italic">Projects</span>
+            </h2>
+          </div>
+          <span class="kicker">Portfolio © 2026</span>
+        </div>
+
+        <div class="projects-stack">
+          <!-- PROJECT 1: Apex Volt (Commercial Electrical) -->
+          <a href="https://orix-energy.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <article class="project-card-cinematic" data-category="commercial" data-project-id="apex">
+              <div class="cinematic-stage">
+                <div class="device-mockup-laptop">
+                  <img class="device-screen-img" src="images/Orix-energy-hero.png" alt="Apex Volt Commercial Contractors Platform" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-caption-row">
+                <h3 class="project-client-name">Orix Energy</h3>
+              </div>
+            </article>
+          </a>
+
+          <!-- PROJECT 2: Lumina Solar (Photovoltaic) -->
+          <a href="https://vanguard-ecru-rho.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <article class="project-card-cinematic" data-category="solar" data-project-id="lumina">
+              <div class="cinematic-stage">
+                <div class="device-mockup-laptop">
+                  <img class="device-screen-img" src="images/Vanguard-hero.png" alt="Lumina Solar & Photovoltaic Dynamics" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-caption-row">
+                <h3 class="project-client-name">Vanguard Electrical Bureau</h3>
+              </div>
+            </article>
+          </a>
+          
+          <!-- PROJECT 3: Gridline 24/7 (Emergency Electricians) -->
+          <a href="https://somapower.framer.website/" target="_blank" rel="noopener noreferrer">
+            <article class="project-card-cinematic" data-category="residential" data-project-id="gridline">
+              <div class="cinematic-stage">
+                <div class="device-mockup-laptop">
+                  <img class="device-screen-img" src="images/Soma Power.png" alt="Gridline 24/7 Master Electricians" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-caption-row">
+                <h3 class="project-client-name">Soma Power</h3>
+              </div>
+            </article>
+          </a>
+
+          <!-- PROJECT 4: Nexis Smart Automation -->
+          <a href="https://tadaima-three.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <article class="project-card-cinematic" data-category="automation" data-project-id="nexis">
+              <div class="cinematic-stage">
+                <div class="device-mockup-laptop">
+                  <img class="device-screen-img" src="images/Tadaima-hero.png" alt="Nexis Smart Automation & KNX" loading="lazy" />
+                </div>
+              </div>
+              <div class="project-caption-row">
+                <h3 class="project-client-name">Tadaima</h3>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="works-cta-center">
+          <a href="#contact" class="pill-btn-white" style="padding:14px 32px; font-size:0.95rem;">
+            <span>Commission a Custom Build</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. TESTIMONIALS SECTION
+         Verified electrical company leaders & contractors
+         ====================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <span class="kicker">Client Endorsements</span>
+        <h2 class="section-headline">
+          Trusted by <span class="serif-italic">Electrical Leaders</span>
+        </h2>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "VoltForge completely transformed how enterprise developers view our commercial contracting business. Our inbound commercial RFP requests jumped by 340% within 90 days. Marcus understands high-voltage engineering better than any agency in the market."
+            </p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Thomas Bergmann" loading="lazy" />
+              <div>
+                <div class="author-name">Thomas Bergmann</div>
+                <div class="author-role">Managing Director, Bergmann High-Voltage GmbH</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "The custom rooftop solar calculator they engineered for us is our highest-converting asset. Customers spend an average of 4 minutes on the site modeling their solar payback before booking an on-site audit. Worth every single dollar."
+            </p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="Elena Rostova" loading="lazy" />
+              <div>
+                <div class="author-name">Elena Rostova</div>
+                <div class="author-role">Founder & Chief Engineer, Solarix Clean Power</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "We run 18 service vans on 24/7 emergency dispatch. Their mobile web platform and local SEO strategy pushed us to the #1 Google spot in Austin. Our phone rings around the clock with high-margin emergency panel replacements."
+            </p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Dave Miller" loading="lazy" />
+              <div>
+                <div class="author-name">Dave Miller</div>
+                <div class="author-role">Master Electrician & CEO, Ampere & Sons</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. BLOG / STORIES SECTION ("Design. Power. Growth.")
+         3-column cards matching the screenshot
+         ====================================================================== -->
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <div class="blog-header-row">
+          <div>
+            <span class="kicker">Insights & Strategy</span>
+            <h2 class="section-headline" style="margin-bottom:0;">
+              Design. Power. <span class="serif-italic">Growth.</span>
+            </h2>
+          </div>
+          <button class="text-link-arrow" id="readMoreArticlesBtn" onclick="document.querySelectorAll('.blog-card')[0].click();">
+            <span>Read Featured Story</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Story 1 -->
+          <article class="blog-card" data-blog-id="solar-calc">
+            <div class="blog-thumb-wrap">
+              <img class="blog-thumb-img" src="https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Interactive Solar Calculator" loading="lazy" />
+            </div>
+            <div class="blog-meta-date">SOLAR TECH · 28.08.2026</div>
+            <h3 class="blog-card-title">How an Interactive Solar Calculator Doubled Inbound Deals for Solar Contractors</h3>
+          </article>
+
+          <!-- Story 2 -->
+          <article class="blog-card" data-blog-id="rebrand-when">
+            <div class="blog-thumb-wrap">
+              <img class="blog-thumb-img" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop" alt="Rebranding Electrical Contractors" loading="lazy" />
+            </div>
+            <div class="blog-meta-date">BRAND STRATEGY · 20.06.2026</div>
+            <h3 class="blog-card-title">Rebranding Electrical Contractors: When It Multiplies Value vs. When It Fails</h3>
+          </article>
+
+          <!-- Story 3 -->
+          <article class="blog-card" data-blog-id="web-award">
+            <div class="blog-thumb-wrap">
+              <img class="blog-thumb-img" src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=800&auto=format&fit=crop" alt="Trade Web Award Winner" loading="lazy" />
+            </div>
+            <div class="blog-meta-date">INDUSTRY · 14.06.2026</div>
+            <h3 class="blog-card-title">VoltForge Named Best Technical Portfolio at Trade Web Awards 2026</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. CLIENTS & PARTNER LOGO BAR ("Gemeinsam entsteht gute Arbeit.")
+         Matching the 5-block grid in screenshot
+         ====================================================================== -->
+    <section class="partners-section">
+      <div class="container">
+        <div class="partners-kicker">Industry Accreditations & Partnerships</div>
+        <h2 class="partners-headline">
+          Together we create <span class="serif-italic">outstanding work.</span>
+        </h2>
+
+        <div class="partners-grid">
+          <!-- Logo 1: NECA -->
+          <div class="partner-box" title="NECA Electrical Contractor Partner">
+            <svg class="partner-svg-logo" viewBox="0 0 160 40" fill="currentColor">
+              <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" letter-spacing="3">NECA</text>
+              <text x="50%" y="85%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7" letter-spacing="1">CONTRACTORS GUILD</text>
+            </svg>
+          </div>
+
+          <!-- Logo 2: SEIA -->
+          <div class="partner-box" title="Solar Energy Industries Certified">
+            <svg class="partner-svg-logo" viewBox="0 0 160 40" fill="currentColor">
+              <circle cx="35" cy="20" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle>
+              <line x1="35" y1="5" x2="35" y2="9" stroke="currentColor" stroke-width="2"></line>
+              <line x1="35" y1="31" x2="35" y2="35" stroke="currentColor" stroke-width="2"></line>
+              <line x1="20" y1="20" x2="24" y2="20" stroke="currentColor" stroke-width="2"></line>
+              <line x1="46" y1="20" x2="50" y2="20" stroke="currentColor" stroke-width="2"></line>
+              <text x="95" y="25" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" letter-spacing="2">SEIA</text>
+            </svg>
+          </div>
+
+          <!-- Logo 3: KNX -->
+          <div class="partner-box" title="KNX Smart Home Automation Partner">
+            <svg class="partner-svg-logo" viewBox="0 0 160 40" fill="currentColor">
+              <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="24" letter-spacing="4">KNX</text>
+              <text x="50%" y="85%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7" letter-spacing="1">CERTIFIED PARTNER</text>
+            </svg>
+          </div>
+
+          <!-- Logo 4: IEC -->
+          <div class="partner-box" title="Independent Electrical Contractors">
+            <svg class="partner-svg-logo" viewBox="0 0 160 40" fill="currentColor">
+              <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" letter-spacing="3">IEC</text>
+              <text x="50%" y="85%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7" letter-spacing="1">GLOBAL STANDARDS</text>
+            </svg>
+          </div>
+
+          <!-- Logo 5: SCHNEIDER / ECO -->
+          <div class="partner-box" title="EcoXpert Electrical Alliance">
+            <svg class="partner-svg-logo" viewBox="0 0 160 40" fill="currentColor">
+              <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20" letter-spacing="2">VOLT-X</text>
+              <text x="50%" y="85%" text-anchor="middle" dominant-baseline="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="7" letter-spacing="1">ENERGY ALLIANCE</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. WARM GLOWING CALL-TO-ACTION BANNER
+         ("Wenn dein Auftritt nicht mehr zu dir passt, können wir sprechen.")
+         Exact glowing orange radial box from screenshot
+         ====================================================================== -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="glow-banner-card">
+          <div class="glow-banner-content">
+            <h2 class="glow-banner-headline">
+              When your digital presence no longer matches your electrical craftsmanship, <span class="serif-italic">let's talk.</span>
+            </h2>
+            <a href="#contact" class="btn-primary">
+              <span>Request Consultation</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. CONTACT FORM SECTION
+         High-converting proposal request tailored for electrical businesses
+         ====================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-info-col">
+            <span class="kicker">Get in Touch</span>
+            <h2>Let's build your <span class="serif-italic">digital powerhouse.</span></h2>
+            <p>
+              Whether you are an electrical contractor bidding high-stakes commercial contracts, a solar installer scaling residential volume, 
+              or a master electrician expanding your fleet; we craft digital platforms that generate good customer acquisition and management.
+            </p>
+
+            <div class="contact-perks-list">
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <div class="perk-text">
+                  <h4>Guaranteed 4-Hour Response</h4>
+                  <p>Direct communication with lead architect Marcus Vance, not account managers.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <div class="perk-text">
+                  <h4>Fixed Scope & Rapid Sprint Delivery</h4>
+                  <p>Production-ready builds delivered in 3 to 6 weeks with sub-second performance.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <svg class="perk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <div class="perk-text">
+                  <h4>Full Trade Credential Integration</h4>
+                  <p>OSHA, ISO, state license badges, and bonding capacities prominently verified.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top:20px; border-top:1px solid rgba(255,255,255,0.08);">
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.1em; color:#666; margin-bottom:6px;">Direct Studio Inquiries</div>
+              <a href="mailto:nedu@skyloftstudio.online" style="font-size:1.25rem; font-weight:700; color:#fff;">nedu@skyloftstudio.online</a>
+              <div style="font-size:0.85rem; color:#888; margin-top:4px;">Studio Line: +2347086760453</div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Card -->
+          <div class="contact-card-box">
+            <form id="electricalContactForm" action="https://formsubmit.co" method="POST">
+              <!-- Services Needed -->
+              <div class="form-group-title">2. Services Required</div>
+              <div class="pill-selector-group">
+                <label class="pill-choice-label">
+                  <input type="checkbox" name="services" value="web" checked>
+                  <span class="pill-choice-span">Web Design</span>
+                </label>
+                <label class="pill-choice-label">
+                  <input type="checkbox" name="services" value="uiux">
+                  <span class="pill-choice-span">UI/UX Design</span>
+                </label>
+                <label class="pill-choice-label">
+                  <input type="checkbox" name="services" value="app">
+                  <span class="pill-choice-span">App Development</span>
+                </label>
+                <label class="pill-choice-label">
+                  <input type="checkbox" name="services" value="seo" >
+                  <span class="pill-choice-span">SEO & Maps</span>
+                </label>
+              </div>
+            
+              <!-- Client Details -->
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="contactName">Your Name *</label>
+                  <input type="text" id="contactName" name="name" required placeholder="e.g. David Miller" />
+                </div>
+                <div class="form-field">
+                  <label for="companyName">Business / Company Name *</label>
+                  <input type="text" id="companyName" name="company" required placeholder="e.g. Apex Electrical Corp" />
+                </div>
+              </div>
+            
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="contactEmail">Work Email *</label>
+                  <input type="email" id="contactEmail" name="email" required placeholder="david@apexelectrical.com" />
+                </div>
+                <div class="form-field">
+                  <label for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" name="phone" placeholder="+1 (555) 019-2834" />
+                </div>
+              </div>
+            
+              <div class="form-field">
+                <label for="projectBudget">Estimated Project Budget</label>
+                <select id="projectBudget" name="budget">
+                  <option value="5k-10k" selected>$1,000 – $5,000 (Rapid Redesign)</option>
+                  <option value="10k-25k">$5,000 – $15,000 (Full Platform & Estimator)</option>
+                  <option value="25k-50k">$15,000 – $30,000 (Enterprise Portal & Field App)</option>
+                  <option value="50k+">$30,000+ (Multi-State Contractor Fleet)</option>
+                </select>
+              </div>
+            
+              <div class="form-field">
+                <label for="projectDetails">Project Objectives & Current Challenges</label>
+                <textarea id="projectDetails" name="details" rows="3" placeholder="Describe your current site, service area, and whether you're targeting commercial GCs, solar owners, or 24/7 emergency dispatch..."></textarea>
+              </div>
+            
+              <button type="submit" class="form-submit-btn">
+                <span>Submit Electrical Project Brief</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. FOOTER
+         Huge email display, structured columns, copyright & giant watermark
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Email Column -->
+          <div class="footer-email-col">
+            <div class="footer-sublabel">Have Questions?</div>
+            <a href="mailto:nedu@skyloftstudio.online" class="footer-main-email">
+              nedu@skyloftstudio.online
+            </a>
+            <p class="footer-tagline">
+              Engineering digital market leaders for the electrical, solar, and infrastructure contracting trades worldwide.
+            </p>
+          </div>
+
+          <!-- Column 1: Navigation -->
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Skyloft Studio</a></li>
+              <li><a href="#sectors">Electrical Sectors</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#works">Best Projects</a></li>
+              <li><a href="#contact">Contact & Quotes</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Sectors -->
+          <div class="footer-column">
+            <h4>Sectors We Serve</h4>
+            <ul class="footer-links">
+              <li><a href="#sectors">Master Electricians</a></li>
+              <li><a href="#sectors">Commercial Contractors</a></li>
+              <li><a href="#sectors">Solar & PV Companies</a></li>
+              <li><a href="#sectors">EV Charging Hubs</a></li>
+              <li><a href="#sectors">Smart Home & KNX</a></li>
+              <li><a href="#sectors">Substation Engineers</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Social Media -->
+          <div class="footer-column">
+            <h4>Social Media</h4>
+            <ul class="footer-links">
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a></li>
+              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble ↗</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Meta info & Copyright -->
+        <div class="footer-meta-row">
+          <div>© 2026 Skyloft Studio. All rights reserved. Specialized for Electrical Contractors.</div>
+        </div>
+
+        <!-- Giant Watermark Typography matching Nattawan Worachat in screenshot -->
+        <div class="footer-watermark" aria-hidden="true">
+          Skyloft Studio
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======================================================================
+         MODAL CONTAINER (Case studies, Service deep dives & Blog articles)
+         ====================================================================== -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+      <div class="modal-box">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&times;</button>
+        <div id="modalBody">
+          <!-- Dynamic Content Injected via script.js -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notice" id="toastNotice">
+      <span id="toastMessage">Inquiry transmitted successfully.</span>
+    </div>
+
+    <!-- Vanilla Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
